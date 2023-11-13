@@ -12,7 +12,7 @@ int main()
    if(marks>100)
    {
     /* Marks greater than 100 */
-    printf("\nDon't Be Smart Enter your Marks Between Limit\n");
+    printf("\nEnter your Marks Between 0 to 100\n");
    }
    else
    {
