@@ -4,13 +4,23 @@ int main(){
     FILE *fp,*fp2;
     fp=fopen("hi.txt","r");
     fp2=fopen("bye.txt","w");
-    int x,n=-1;
-    char ch[1000],new[1000];
+    int line=1,x,n;
+    char ch[1000],new[1000],y;
     printf("Enter the line you want to replace:");
-    scanf("%d",x);
+    scanf("%d",&x);
     printf("Enter the new line :");
-    gets(new);
-    while(n!=x){
-         fgets(ch,)
+    scanf("%s",new);
+    while(!feof(fp)){
+        y=fgetc(fp);
+        if (y=='\n'){
+            line+=1;
+        }
+        fputc(y,fp2);
+        if (line==x){
+            fputs(new,fp2);
+            fputc("\n",fp2);
+            fgets(ch,1000,fp);
+            line++;
+        }
     }
 }
