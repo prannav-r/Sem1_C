@@ -3,7 +3,7 @@
 
 int main(){
     int n,i,*ptr;
-    printf("Enter number of elements");
+    printf("Enter number of elements:");
     scanf("%d",&n);
     ptr=(int*)calloc(n,sizeof(int));
     for(i=0;i<n;i++){
