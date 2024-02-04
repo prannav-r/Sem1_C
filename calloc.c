@@ -13,6 +13,5 @@ int main(){
     for (i=0;i<n;i++){
         printf("%d\n",*(ptr+i));
     }
-    printf("%d\n",ptr);
     free(ptr);
 }

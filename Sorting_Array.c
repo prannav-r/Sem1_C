@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<stdbool.h>
 int ch;
 
 int main(){

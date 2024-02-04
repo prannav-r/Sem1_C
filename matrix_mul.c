@@ -14,29 +14,15 @@ int main(){
             scanf("%d",&m1[i][j]);
         }
     }
-    printf("Enter elements of matric 2\n");
+    printf("Enter elements of matrix 2\n");
     for (i=0;i<r2;i++){
         for(j=0;j<c2;j++){
             printf("Enter row %d column %d element",i+1,j+1);
-            scanf("%d",&m1[i][j]);
+            scanf("%d",&m2[i][j]);
         }
     }
     if (c1!=r2){
         printf("Multiplication not possible");
         exit(0);
     }
-    for (i=0;i<c1;i++){
-        for (j=i;j<r2;j++){
-            x=
-
-        }
-
-    }
-
-
-
-
-
-
-    
 }

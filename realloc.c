@@ -3,7 +3,7 @@
 
 int main(){
     int n,i,*ptr;
-    printf("Enter number of elements");
+    printf("Enter number of elements:");
     scanf("%d",&n);
     ptr=(int*)calloc(n,sizeof(int));
     for(i=0;i<n;i++){
@@ -13,13 +13,13 @@ int main(){
     for (i=0;i<n;i++){
         printf("%d\n",*(ptr+i));
     }
-    printf("Enter new no of elements:\n");
+    printf("Enter new no of elements:");
     scanf("%d",&n);
     int *ptr1;
-    ptr1=(int*)realloc(n,sizeof(int));
-    if (ptr==ptr1){
-        printf("Extended");
+    ptr1=(int*)realloc(ptr,n*sizeof(int));
+    for (i=0;i<n;i++){
+        printf("%d\n",*(ptr+i));
     }
-    else
-        printf("New");
+    free(ptr);
+    free(ptr1);
 }
