@@ -28,7 +28,7 @@ int main(){
         printf("Enter eng,math,phy,chem marks:");
         scanf("%d %d %d %d",arr[i].eng,arr[i].math,arr[i].phy,arr[i].chem);
         printf("Enter language subject and marks:");
-        scanf("%s",lan);
+        scanf("%s",&lan);
     }
     
 }
